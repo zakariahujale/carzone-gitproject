@@ -1,0 +1,27 @@
+checking virtual version
+
+virtual --version 
+....
+
+creating virtual invortment
+
+python -m venv env
+
+..........................
+
+to activate
+
+source env/Scripts/activate
+                  deactivate
+..........................
+
+to create django project
+django-admin startproject nameoftheproject
+
+........................................
+
+to run server
+python manage.py runserver
+
+to stop
+ctrl+break
