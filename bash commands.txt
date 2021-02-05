@@ -1,3 +1,10 @@
+not bash commond to clear cache brower after logo not loading(or generally
+ctrl + f5
+
+open to vscode 
+ code . 
+
+
 checking virtual version
 
 virtual --version 
