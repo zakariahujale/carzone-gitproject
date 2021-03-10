@@ -1,0 +1,24 @@
+ {% if cars.has_other_pages %}
+                        <ul class="pagination">
+                          {% if cars.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" href="page-{{cars.previous_page_number}}"><i class="fa fa-angle-left"></i></a>
+                                </li>
+                           {% else %}
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
+                                </li>
+                            {% endif % }
+
+                            {% for i in cars.paginator.page_range %}
+                               {% if cars.number == i %}
+                                 <li class="page-item"><a class="page-link active" href="#">{{i}}</a></li>
+                               {% else %}
+                                 <li class="page-item"><a class="page-link active" href="page={{i}}">{{i}}</a></li>
+                               {% endif %}
+                            {% endfor %}    
+                        
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="fa fa-angle-right"></i></a>
+                            </li>
+                        </ul>
